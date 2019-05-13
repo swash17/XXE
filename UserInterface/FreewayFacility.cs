@@ -25,10 +25,10 @@ namespace XXE_UserInterface
         int volumeStepSize = 200;
         int MaxVolume = 8000;
         int MinVolume = 100;
-        int intervalVolume = 50;
-        double maxTravelTime = 12;
-        double minTravelTime = 6;
-        double intervalTravelTime = 1;
+        int IntervalVolume = 50;
+        double MaxTravelTime = 12;
+        double MinTravelTime = 6;
+        double IntervalTravelTime = 1;
         int TPnumber = 2;
         bool IsRampProportion = true;
         XXE_Calculations.FreewayFacilitiesCalculations myFreewayFacilityCalculation = new XXE_Calculations.FreewayFacilitiesCalculations();
@@ -89,41 +89,41 @@ namespace XXE_UserInterface
             double XAxisInterval = Math.Round(MaxVolume / 10.0);
             double XAxisMinValue = 0;
             double XAxisMaxValue = Math.Round(MaxVolume / 10.0) * 10;
-            minTravelTime = int.MaxValue;
-            maxTravelTime = int.MinValue;
+            MinTravelTime = int.MaxValue;
+            MaxTravelTime = int.MinValue;
             for (int n = 0; n < VolumeTravelTimeList.Count; n++)
             {
-                if (minTravelTime > VolumeTravelTimeList[n][1])
+                if (MinTravelTime > VolumeTravelTimeList[n][1])
                 {
-                    minTravelTime = VolumeTravelTimeList[n][1];
+                    MinTravelTime = VolumeTravelTimeList[n][1];
                 }
             }
             for (int n = 0; n < VolumeTravelTimeList.Count; n++)
             {
-                if (maxTravelTime < VolumeTravelTimeList[n][1])
+                if (MaxTravelTime < VolumeTravelTimeList[n][1])
                 {
-                    maxTravelTime = VolumeTravelTimeList[n][1];
+                    MaxTravelTime = VolumeTravelTimeList[n][1];
                 }
             }
-            double YAxisMinValue = minTravelTime;
-            double YAxisMaxValue = maxTravelTime;
-            double YAxisInterval = (maxTravelTime - minTravelTime) / 10;
-            if ((maxTravelTime - minTravelTime) > 10)
+            double YAxisMinValue = MinTravelTime;
+            double YAxisMaxValue = MaxTravelTime;
+            double YAxisInterval = (MaxTravelTime - MinTravelTime) / 10;
+            if ((MaxTravelTime - MinTravelTime) > 10)
             {
-                YAxisInterval = Math.Round((maxTravelTime - minTravelTime) / 10.0);
-                YAxisMaxValue = minTravelTime + YAxisInterval * 10;
+                YAxisInterval = Math.Round((MaxTravelTime - MinTravelTime) / 10.0);
+                YAxisMaxValue = MinTravelTime + YAxisInterval * 10;
             }
-            else if ((maxTravelTime - minTravelTime) > 1)
+            else if ((MaxTravelTime - MinTravelTime) > 1)
             {
-                YAxisInterval = Math.Round((maxTravelTime - minTravelTime) / 10.0, 1);
-                YAxisMaxValue = minTravelTime + YAxisInterval * 10;
+                YAxisInterval = Math.Round((MaxTravelTime - MinTravelTime) / 10.0, 1);
+                YAxisMaxValue = MinTravelTime + YAxisInterval * 10;
             }
-            else if ((maxTravelTime - minTravelTime) > 0)
+            else if ((MaxTravelTime - MinTravelTime) > 0)
             {
-                YAxisInterval = Math.Round((maxTravelTime - minTravelTime) / 2.0, 2);
-                YAxisMaxValue = minTravelTime + YAxisInterval * 2;
+                YAxisInterval = Math.Round((MaxTravelTime - MinTravelTime) / 2.0, 2);
+                YAxisMaxValue = MinTravelTime + YAxisInterval * 2;
             }
-            while (YAxisMaxValue < maxTravelTime)
+            while (YAxisMaxValue < MaxTravelTime)
             {
                 YAxisMaxValue = YAxisMaxValue + YAxisInterval;
             }
