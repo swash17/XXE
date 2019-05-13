@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BDFD14E-73B3-4070-8207-5B47FE39EFF7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XXE_UserInterface</RootNamespace>
+    <AssemblyName>XXE_UserInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HCMCalc_Calculations">
+      <HintPath>..\..\..\HCM-CALC\Calculations\bin\Release\HCMCalc_Calculations.dll</HintPath>
+    </Reference>
+    <Reference Include="HCMCalc_Definitions">
+      <HintPath>..\..\..\HCM-CALC\Definitions\bin\Release\HCMCalc_Definitions.dll</HintPath>
+    </Reference>
+    <Reference Include="HCMCalc_FileInputOutput">
+      <HintPath>..\..\..\HCM-CALC\FileInputOutput\bin\Release\HCMCalc_FileInputOutput.dll</HintPath>
+    </Reference>
+    <Reference Include="HCMCalc_FreewayFacility">
+      <HintPath>..\..\..\HCM-CALC\FreewayFacility\bin\Release\HCMCalc_FreewayFacility.dll</HintPath>
+    </Reference>
+    <Reference Include="SwashStatistics_ChartingControl">
+      <HintPath>..\..\..\SwashStatistics\ChartingControl\bin\Debug\SwashStatistics_ChartingControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SwashStatistics_DescriptiveStatistics">
+      <HintPath>..\..\..\SwashStatistics\DescriptiveStatistics\bin\Debug\SwashStatistics_DescriptiveStatistics.dll</HintPath>
+    </Reference>
+    <Reference Include="SwashWare_FileManagement">
+      <HintPath>..\..\..\Utilities\FileManagement\bin\Release\SwashWare_FileManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XXE_Calculations">
+      <HintPath>..\Calculations\bin\Debug\XXE_Calculations.dll</HintPath>
+    </Reference>
+    <Reference Include="XXE_DataStructures">
+      <HintPath>..\DataStructures\bin\Debug\XXE_DataStructures.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalParm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalParm.Designer.cs">
+      <DependentUpon>AnalParm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSaveSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileSaveSummary.Designer.cs">
+      <DependentUpon>FileSaveSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlowConservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlowConservation.Designer.cs">
+      <DependentUpon>FlowConservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FreewayFacility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FreewayFacility.designer.cs">
+      <DependentUpon>FreewayFacility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkData.Designer.cs">
+      <DependentUpon>LinkData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkTimePeriodData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkTimePeriodData.Designer.cs">
+      <DependentUpon>LinkTimePeriodData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDImain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDImain.Designer.cs">
+      <DependentUpon>MDImain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetworkTimePerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkTimePerData.Designer.cs">
+      <DependentUpon>NetworkTimePerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ODresults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ODresults.Designer.cs">
+      <DependentUpon>ODresults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrigDestData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrigDestData.Designer.cs">
+      <DependentUpon>OrigDestData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjProp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjProp.Designer.cs">
+      <DependentUpon>ProjProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Results.Designer.cs">
+      <DependentUpon>Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UEresultsFreewayfacilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UEresultsFreewayfacilities.Designer.cs">
+      <DependentUpon>UEresultsFreewayfacilities.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalParm.resx">
+      <DependentUpon>AnalParm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browser.resx">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileSaveSummary.resx">
+      <DependentUpon>FileSaveSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowConservation.resx">
+      <DependentUpon>FlowConservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FreewayFacility.resx">
+      <DependentUpon>FreewayFacility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkData.resx">
+      <DependentUpon>LinkData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkTimePeriodData.resx">
+      <DependentUpon>LinkTimePeriodData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDImain.resx">
+      <DependentUpon>MDImain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkTimePerData.resx">
+      <DependentUpon>NetworkTimePerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ODresults.resx">
+      <DependentUpon>ODresults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrigDestData.resx">
+      <DependentUpon>OrigDestData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjProp.resx">
+      <DependentUpon>ProjProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UEresultsFreewayfacilities.resx">
+      <DependentUpon>UEresultsFreewayfacilities.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CalculatorHS.BMP" />
+    <Content Include="Resources\CopyHS.bmp" />
+    <Content Include="Resources\DeleteTable.bmp" />
+    <Content Include="Resources\FormulaEvaluatorHS.bmp" />
+    <Content Include="Resources\gear_32.bmp" />
+    <Content Include="Resources\HTMLPageHS.bmp" />
+    <Content Include="Resources\OpenFolder.bmp" />
+    <Content Include="Resources\PasteHS.bmp" />
+    <Content Include="Resources\RowAdd.bmp" />
+    <Content Include="Resources\RowDelete.bmp" />
+    <Content Include="Resources\RowInsert.bmp" />
+    <Content Include="Resources\RowInsert1.bmp" />
+    <Content Include="Resources\Save.bmp" />
+    <Content Include="Resources\SeattleFlowMap.bmp" />
+    <Content Include="Resources\XMLFileHS.bmp" />
+    <Content Include="Resources\XXE.ico" />
+    <Content Include="Resources\XXE2.ico" />
+    <Content Include="Resources\XXEXQ.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

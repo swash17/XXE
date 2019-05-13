@@ -1,0 +1,108 @@
+        
+        public static void FrankWolfe(double errTol)
+        {
+            int iter = 0;   //iteration
+            double x1, x2;  //equation terms
+            double Fcn;
+            double LinearApproxFcn;
+            double PartDeriv1;
+            double PartDeriv2;
+            
+            //initial "solution"
+            x1 = 0;
+            x2 = 0;
+
+            Fcn = 5 * x1 - x1 *x1 + 8 * x2 - 2 * x2 *x2;
+            LinearApproxFcn = 5*x1 + 8*x2;
+            
+            //EvaluateFunction(ref x1, ref x2, ref PartDeriv1, ref PartDeriv2);
+            PartDeriv1 = 5 - 2 * x1;
+            PartDeriv2 = 8 - 4 * x2;
+            Simplex(3, 2, 6);
+        }
+
+        public static void EvaluateFunction(ref double x1, ref double x2, ref double partDeriv1, ref double partDeriv2)
+        {
+            //PartDeriv1 = 5 - 2 * x1;
+            //PartDeriv2 = 8 - 4 * x2;
+        }
+
+        public static void Simplex(int coeff1, int coeff2, int MaxQuant)
+        {
+            int FcnMax = 0; //maximum value of objective function
+            int ConstraintFcn;
+
+            int x1Max = MaxQuant/coeff1;
+            int x2Max = MaxQuant/coeff2;
+
+            for (int x1=0; x1 <= x1Max; x1++)
+            {
+                for (int x2=0; x2 <= x2Max; x2++)
+                {
+                    ConstraintFcn = coeff1*x1 + coeff2*x2;
+
+                    if (ConstraintFcn <= MaxQuant)
+                    {
+                        ConstraintFcn = 5 * x1 + 8 * x2;
+                        if (ConstraintFcn > FcnMax)
+                            FcnMax = ConstraintFcn;
+                    }
+                }
+             }
+        }
+        
+
+        public static double Bisection(double xLow, double xUp, double convCrit)
+        {
+            double xRoot;
+            double fcnxlow, fcnxroot;
+            double fcnprod; //product of function with xLow and function with xRoot
+
+            xRoot = (xLow + xUp) / 2;
+            fcnxlow = 2 * (xLow * xLow) - 4 * xLow + 1;
+            fcnxroot = 2 * (xRoot * xRoot) - 4 * xRoot + 1;
+
+            fcnprod = fcnxlow * fcnxroot;
+
+            if (Math.Abs(fcnprod) <= convCrit)
+                return xRoot;
+            else
+            {
+                if (fcnprod < 0)
+                    xUp = xRoot;
+                else
+                    xLow = xRoot;
+            }
+            return Bisection(xLow, xUp, 0.00005);
+
+            //message that convergence was not achieved
+
+        }
+        
+        
+        int[] FromNode = new int[999];
+        int[] ToNode = new int[999];
+
+        double[] Len = new double[499];
+        int[] Speed = new int[499];
+        long[] Cap = new long[499];
+
+        Len[LinkNum] = Link[j].Length;              //Link[LinkNum].Length = Link[j].Length;
+        Speed[LinkNum] = Link[j].FreeFlowSpeed;     // Link[LinkNum].FreeFlowSpeed = Link[j].FreeFlowSpeed;
+
+        NFL[LinkNum] = FL[j];
+        Cap[LinkNum] = Convert.ToInt64(Link[j].Capacity * Link[j].PropCap[tp]);
+        //Link[LinkNum].vcRatio = FL[j] / Convert.ToDouble(Cap[LinkNum]);             //FL[j] / Convert.ToDouble(Link[j].CapacityTP[tp]);
+        Link[LinkNum].Description = Link[j].Description;
+        
+        LinkCounter = 0;
+            do
+            {
+                LinkCounter++;
+                if (LinkFromNodes[LinkCounter] == i)
+                    break;
+
+            } while (LinkCounter <= (NetworkData.TotalLinks + 1));
+
+            FromNode[LinkNum] = Link[LinkCounter].FromNode;
+            ToNode[LinkNum] = LinkToNodes[j];
