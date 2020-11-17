@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<XXE_XML>
+  <ProjectInfo>
+    <Title>Horseshoe Network</Title>
+    <AnalystName>SSW</AnalystName>
+    <AnalysisDate>10/8/2007 11:07:15 PM</AnalysisDate>
+    <Notes>Base Horseshoe Network</Notes>
+    <FileName>C:\My Documents\XXE\Horseshoe.xml</FileName>
+  </ProjectInfo>
+  <NetworkData>
+    <TimePeriodType>Single</TimePeriodType>
+    <NumTimePeriods>1</NumTimePeriods>
+    <TimePeriodSize>60</TimePeriodSize>
+    <ConvCrit>0.0005</ConvCrit>
+    <MaxIter>100</MaxIter>
+    <TravTimeAdjRatio>1</TravTimeAdjRatio>
+    <PrintCentroidConnectors>False</PrintCentroidConnectors>
+    <FirstNetworkNode>7</FirstNetworkNode>
+    <NumberOfNodes>10</NumberOfNodes>
+  </NetworkData>
+  <LinkData>
+    <Link id="1">
+      <FromNode>1</FromNode>
+      <ToNode>7</ToNode>
+      <Length>1.1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access 1-7</Description>
+    </Link>
+    <Link id="2">
+      <FromNode>2</FromNode>
+      <ToNode>8</ToNode>
+      <Length>0.5</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access 2-8</Description>
+    </Link>
+    <Link id="3">
+      <FromNode>3</FromNode>
+      <ToNode>10</ToNode>
+      <Length>1.3</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access 3-10</Description>
+    </Link>
+    <Link id="4">
+      <FromNode>4</FromNode>
+      <ToNode>7</ToNode>
+      <Length>1.1</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Dummy 4-7</Description>
+    </Link>
+    <Link id="5">
+      <FromNode>5</FromNode>
+      <ToNode>8</ToNode>
+      <Length>0.5</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Dummy 5-8</Description>
+    </Link>
+    <Link id="6">
+      <FromNode>6</FromNode>
+      <ToNode>10</ToNode>
+      <Length>1.3</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Dummy 6-10</Description>
+    </Link>
+    <Link id="7">
+      <FromNode>7</FromNode>
+      <ToNode>4</ToNode>
+      <Length>1.1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access 7-4</Description>
+    </Link>
+    <Link id="8">
+      <FromNode>7</FromNode>
+      <ToNode>8</ToNode>
+      <Length>4.2</Length>
+      <Capacity>3800</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>55</FreeFlowSpeed>
+      <Description>SB Hwy 7-8</Description>
+    </Link>
+    <Link id="9">
+      <FromNode>8</FromNode>
+      <ToNode>5</ToNode>
+      <Length>0.5</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access 8-5</Description>
+    </Link>
+    <Link id="10">
+      <FromNode>8</FromNode>
+      <ToNode>7</ToNode>
+      <Length>4.2</Length>
+      <Capacity>3800</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>55</FreeFlowSpeed>
+      <Description>NB Hwy 8-7</Description>
+    </Link>
+    <Link id="11">
+      <FromNode>8</FromNode>
+      <ToNode>9</ToNode>
+      <Length>6.1</Length>
+      <Capacity>950</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>EB Art 8-9</Description>
+    </Link>
+    <Link id="12">
+      <FromNode>9</FromNode>
+      <ToNode>8</ToNode>
+      <Length>6.1</Length>
+      <Capacity>550</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>WB Art 9-8</Description>
+    </Link>
+    <Link id="13">
+      <FromNode>9</FromNode>
+      <ToNode>10</ToNode>
+      <Length>5.2</Length>
+      <Capacity>3200</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>55</FreeFlowSpeed>
+      <Description>NB Hwy 9-10</Description>
+    </Link>
+    <Link id="14">
+      <FromNode>10</FromNode>
+      <ToNode>6</ToNode>
+      <Length>1.3</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access 10-6</Description>
+    </Link>
+    <Link id="15">
+      <FromNode>10</FromNode>
+      <ToNode>9</ToNode>
+      <Length>5.2</Length>
+      <Capacity>3800</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>55</FreeFlowSpeed>
+      <Description>SB Hwy 10-9</Description>
+    </Link>
+  </LinkData>
+  <ODdata>
+    <O-D id="1">
+      <OrigZone>1</OrigZone>
+      <DestZone>2</DestZone>
+      <NumTrips>700</NumTrips>
+    </O-D>
+    <O-D id="2">
+      <OrigZone>1</OrigZone>
+      <DestZone>3</DestZone>
+      <NumTrips>300</NumTrips>
+    </O-D>
+    <O-D id="3">
+      <OrigZone>2</OrigZone>
+      <DestZone>1</DestZone>
+      <NumTrips>200</NumTrips>
+    </O-D>
+    <O-D id="4">
+      <OrigZone>2</OrigZone>
+      <DestZone>3</DestZone>
+      <NumTrips>400</NumTrips>
+    </O-D>
+    <O-D id="5">
+      <OrigZone>3</OrigZone>
+      <DestZone>1</DestZone>
+      <NumTrips>100</NumTrips>
+    </O-D>
+    <O-D id="6">
+      <OrigZone>3</OrigZone>
+      <DestZone>2</DestZone>
+      <NumTrips>900</NumTrips>
+    </O-D>
+  </ODdata>
+</XXE_XML>

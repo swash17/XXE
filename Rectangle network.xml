@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<XXE_XML>
+  <ProjectInfo>
+    <Title>Rectangle Network</Title>
+    <AnalystName>SSW</AnalystName>
+    <AnalysisDate>11/9/2007 11:30:08 PM</AnalysisDate>
+    <Notes>Simple 4-node rectangular network, with 4 OD centroids</Notes>
+    <FileName>C:\My Documents\XXE\Rectangle.xml</FileName>
+  </ProjectInfo>
+  <NetworkData>
+    <TimePeriodType>Single</TimePeriodType>
+    <NumTimePeriods>1</NumTimePeriods>
+    <TimePeriodSize>60</TimePeriodSize>
+    <ConvCrit>0.0005</ConvCrit>
+    <MaxIter>100</MaxIter>
+    <TravTimeAdjRatio>1</TravTimeAdjRatio>
+    <PrintCentroidConnectors>False</PrintCentroidConnectors>
+    <FirstNetworkNode>9</FirstNetworkNode>
+    <NumberOfNodes>12</NumberOfNodes>
+  </NetworkData>
+  <LinkData>
+    <Link id="1">
+      <FromNode>1</FromNode>
+      <ToNode>9</ToNode>
+      <Length>1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access from origin 1 to node 9</Description>
+    </Link>
+    <Link id="2">
+      <FromNode>2</FromNode>
+      <ToNode>10</ToNode>
+      <Length>1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access from origin 2 to node 10</Description>
+    </Link>
+    <Link id="3">
+      <FromNode>3</FromNode>
+      <ToNode>11</ToNode>
+      <Length>1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access from origin 3 to node 11</Description>
+    </Link>
+    <Link id="4">
+      <FromNode>4</FromNode>
+      <ToNode>12</ToNode>
+      <Length>1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access from origin 4 to node 12</Description>
+    </Link>
+    <Link id="5">
+      <FromNode>5</FromNode>
+      <ToNode>9</ToNode>
+      <Length>0.99</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>1</FreeFlowSpeed>
+      <Description>Dummy link</Description>
+    </Link>
+    <Link id="6">
+      <FromNode>6</FromNode>
+      <ToNode>10</ToNode>
+      <Length>0.99</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>1</FreeFlowSpeed>
+      <Description>Dummy link</Description>
+    </Link>
+    <Link id="7">
+      <FromNode>7</FromNode>
+      <ToNode>11</ToNode>
+      <Length>0.99</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>1</FreeFlowSpeed>
+      <Description>Dummy link</Description>
+    </Link>
+    <Link id="8">
+      <FromNode>8</FromNode>
+      <ToNode>12</ToNode>
+      <Length>0.99</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>1</FreeFlowSpeed>
+      <Description>Dummy link</Description>
+    </Link>
+    <Link id="9">
+      <FromNode>9</FromNode>
+      <ToNode>5</ToNode>
+      <Length>1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access from node 9 to destination 5</Description>
+    </Link>
+    <Link id="10">
+      <FromNode>9</FromNode>
+      <ToNode>10</ToNode>
+      <Length>1.5</Length>
+      <Capacity>1500</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="11">
+      <FromNode>9</FromNode>
+      <ToNode>11</ToNode>
+      <Length>2.5</Length>
+      <Capacity>3000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="12">
+      <FromNode>10</FromNode>
+      <ToNode>6</ToNode>
+      <Length>1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access from node 10 to destination 6</Description>
+    </Link>
+    <Link id="13">
+      <FromNode>10</FromNode>
+      <ToNode>9</ToNode>
+      <Length>1.5</Length>
+      <Capacity>1500</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="14">
+      <FromNode>10</FromNode>
+      <ToNode>12</ToNode>
+      <Length>2.5</Length>
+      <Capacity>3000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="15">
+      <FromNode>11</FromNode>
+      <ToNode>7</ToNode>
+      <Length>1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access from node 11 to destination 7</Description>
+    </Link>
+    <Link id="16">
+      <FromNode>11</FromNode>
+      <ToNode>9</ToNode>
+      <Length>2.5</Length>
+      <Capacity>3000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="17">
+      <FromNode>11</FromNode>
+      <ToNode>12</ToNode>
+      <Length>1.5</Length>
+      <Capacity>1500</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="18">
+      <FromNode>12</FromNode>
+      <ToNode>8</ToNode>
+      <Length>1</Length>
+      <Capacity>1000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>25</FreeFlowSpeed>
+      <Description>Access from node 12 to destination 8</Description>
+    </Link>
+    <Link id="19">
+      <FromNode>12</FromNode>
+      <ToNode>10</ToNode>
+      <Length>2.5</Length>
+      <Capacity>3000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="20">
+      <FromNode>12</FromNode>
+      <ToNode>11</ToNode>
+      <Length>1.5</Length>
+      <Capacity>1500</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+  </LinkData>
+  <ODdata>
+    <O-D id="1">
+      <OrigZone>1</OrigZone>
+      <DestZone>2</DestZone>
+      <NumTrips>750</NumTrips>
+    </O-D>
+    <O-D id="2">
+      <OrigZone>1</OrigZone>
+      <DestZone>3</DestZone>
+      <NumTrips>500</NumTrips>
+    </O-D>
+    <O-D id="3">
+      <OrigZone>1</OrigZone>
+      <DestZone>4</DestZone>
+      <NumTrips>640</NumTrips>
+    </O-D>
+    <O-D id="4">
+      <OrigZone>2</OrigZone>
+      <DestZone>1</DestZone>
+      <NumTrips>700</NumTrips>
+    </O-D>
+    <O-D id="5">
+      <OrigZone>2</OrigZone>
+      <DestZone>3</DestZone>
+      <NumTrips>495</NumTrips>
+    </O-D>
+    <O-D id="6">
+      <OrigZone>2</OrigZone>
+      <DestZone>4</DestZone>
+      <NumTrips>250</NumTrips>
+    </O-D>
+    <O-D id="7">
+      <OrigZone>3</OrigZone>
+      <DestZone>1</DestZone>
+      <NumTrips>350</NumTrips>
+    </O-D>
+    <O-D id="8">
+      <OrigZone>3</OrigZone>
+      <DestZone>2</DestZone>
+      <NumTrips>240</NumTrips>
+    </O-D>
+    <O-D id="9">
+      <OrigZone>3</OrigZone>
+      <DestZone>4</DestZone>
+      <NumTrips>325</NumTrips>
+    </O-D>
+    <O-D id="10">
+      <OrigZone>4</OrigZone>
+      <DestZone>1</DestZone>
+      <NumTrips>575</NumTrips>
+    </O-D>
+    <O-D id="11">
+      <OrigZone>4</OrigZone>
+      <DestZone>2</DestZone>
+      <NumTrips>400</NumTrips>
+    </O-D>
+    <O-D id="12">
+      <OrigZone>4</OrigZone>
+      <DestZone>3</DestZone>
+      <NumTrips>430</NumTrips>
+    </O-D>
+  </ODdata>
+</XXE_XML>

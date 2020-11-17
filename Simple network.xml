@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<XXE_XML>
+  <ProjectInfo>
+    <Title>Simple Network</Title>
+    <AnalystName>SSW</AnalystName>
+    <AnalysisDate>11/10/2007 2:31:06 PM</AnalysisDate>
+    <Notes>2 node example</Notes>
+    <FileName>C:\My Documents\XXE\SimpleExample.xml</FileName>
+  </ProjectInfo>
+  <NetworkData>
+    <TimePeriodType>Single</TimePeriodType>
+    <NumTimePeriods>1</NumTimePeriods>
+    <TimePeriodSize>60</TimePeriodSize>
+    <ConvCrit>0.0005</ConvCrit>
+    <MaxIter>100</MaxIter>
+    <TravTimeAdjRatio>1</TravTimeAdjRatio>
+    <PrintCentroidConnectors>False</PrintCentroidConnectors>
+    <FirstNetworkNode>5</FirstNetworkNode>
+    <NumberOfNodes>8</NumberOfNodes>
+  </NetworkData>
+  <LinkData>
+    <Link id="1">
+      <FromNode>1</FromNode>
+      <ToNode>5</ToNode>
+      <Length>1</Length>
+      <Capacity>5000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>30</FreeFlowSpeed>
+      <Description>Access 1-5</Description>
+    </Link>
+    <Link id="2">
+      <FromNode>2</FromNode>
+      <ToNode>8</ToNode>
+      <Length>1</Length>
+      <Capacity>5000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>30</FreeFlowSpeed>
+      <Description>Access 2-8</Description>
+    </Link>
+    <Link id="3">
+      <FromNode>3</FromNode>
+      <ToNode>5</ToNode>
+      <Length>1</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>30</FreeFlowSpeed>
+      <Description>Dummy link</Description>
+    </Link>
+    <Link id="4">
+      <FromNode>4</FromNode>
+      <ToNode>8</ToNode>
+      <Length>1</Length>
+      <Capacity>1</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>30</FreeFlowSpeed>
+      <Description>Dummy link</Description>
+    </Link>
+    <Link id="5">
+      <FromNode>5</FromNode>
+      <ToNode>3</ToNode>
+      <Length>1</Length>
+      <Capacity>5000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>30</FreeFlowSpeed>
+      <Description>Access 5-3</Description>
+    </Link>
+    <Link id="6">
+      <FromNode>5</FromNode>
+      <ToNode>6</ToNode>
+      <Length>3.75</Length>
+      <Capacity>4000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>55</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="7">
+      <FromNode>5</FromNode>
+      <ToNode>7</ToNode>
+      <Length>2.5</Length>
+      <Capacity>2000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="8">
+      <FromNode>6</FromNode>
+      <ToNode>8</ToNode>
+      <Length>3.75</Length>
+      <Capacity>4000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>55</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="9">
+      <FromNode>7</FromNode>
+      <ToNode>8</ToNode>
+      <Length>2.5</Length>
+      <Capacity>2000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>35</FreeFlowSpeed>
+      <Description>Physical link</Description>
+    </Link>
+    <Link id="10">
+      <FromNode>8</FromNode>
+      <ToNode>4</ToNode>
+      <Length>1</Length>
+      <Capacity>5000</Capacity>
+      <RestrictCap>False</RestrictCap>
+      <FreeFlowSpeed>30</FreeFlowSpeed>
+      <Description>Access 8-4</Description>
+    </Link>
+  </LinkData>
+  <ODdata>
+    <O-D id="1">
+      <OrigZone>1</OrigZone>
+      <DestZone>2</DestZone>
+      <NumTrips>5000</NumTrips>
+    </O-D>
+  </ODdata>
+</XXE_XML>
